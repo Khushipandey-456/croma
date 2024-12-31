@@ -1,0 +1,114 @@
+/* #logo{
+    height:200px;
+    width:  fit-content;
+    background-color: black;
+    border-radius: 10px;
+    margin: 4rem auto;
+    color: white;
+     border: 2px solid white;
+     padding-left: 50px;
+     padding-right: 50px;
+
+    
+}
+*/
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Georgia;
+}
+
+#main-container {
+    border: 2px solid brown;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+#main-container>#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+    background-color: black;
+    /* padding: 10px; */
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+
+#logo>img {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 30%;
+
+}
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 50px;
+    border: 2px solid green;
+
+}
+
+#nav-links>input {
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+a>img {
+    height: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span {
+    font-size: 20px;
+    margin-top: 10px;
+}

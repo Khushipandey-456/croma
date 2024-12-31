@@ -1,0 +1,23 @@
+#form {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 10px;
+    margin: 4rem auto;
+}
+
+input {
+    height: 30px;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid aqua;
+    color: white;
+    padding: 10px;
+}
+
+span {
+    margin-left: 40%;
+}

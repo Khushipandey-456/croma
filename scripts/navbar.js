@@ -1,0 +1,4 @@
+let navbar=()=>{
+    let nav=``
+
+}
