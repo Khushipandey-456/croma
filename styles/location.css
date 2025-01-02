@@ -20,4 +20,36 @@ input {
 
 span {
     margin-left: 40%;
+    font-size: 20px;
 }
+#submit{
+    width: 95%;
+    height: 40px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    cursor: pointer;
+}
+/* .sidenav {
+    height: 80%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow:scroll;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow-x: hidden; 
+
+} */

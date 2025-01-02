@@ -1,0 +1,27 @@
+#footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: rgb(61, 58, 58);
+    bottom: 0;
+    position: absolute;
+    height:50%;
+    padding: 10px;
+
+}
+input{
+    height: 40px;
+    width: 40%;
+}
+#footer1 ,#footer2,#footer3{
+    margin-top: -30%;
+    border-right: 2px solid white;
+    text-align:center ;
+}
+a:hover{
+    color: rgb(24, 243, 188);
+ 
+}
