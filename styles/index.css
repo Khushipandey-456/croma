@@ -16,7 +16,7 @@
     max-width: 100%;
     margin: auto;
     overflow:hidden;
-    height:400px;
+    height:fit-content;
 } 
 .slide{
     width: 100%;
