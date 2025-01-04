@@ -1,16 +1,16 @@
 let footers = () => {
     let card = `<div id="footer">
-             <div id="footer1">
+             <div class="footerLinks">
                 <h2>CONNECT WITH US</h2>
                 <input type="email" placeholder="Enter Email ID" id="email"><br>
                 <a href="https://www.youtube.com/user/CromaRetail">Youtube</a>
-                <a href="">Facebook</a>
-                <a href="">Instragram</a>
+                <a href="https://www.facebook.com/CromaRetail/">Facebook</a>
+                <a href="https://www.instagram.com/croma.retail/">Instragram</a>
                 <a href="">Linkedin</a>
                 <a href="">Twiter</a><br>
                 &copy; Copyright 2023 Croma. All rights reserved
             </div>
-            <div id="footer2">
+             <div class="footerLinks">
                 <h2>USEFULL LINKS </h2>
                 <a href="">About Croma</a><br>
                 <a href="">Help And Support</a><br>
@@ -23,7 +23,7 @@ let footers = () => {
                 <a href="">Careers At Croma</a><br>
             
             </div>
-            <div id="footer3">
+              <div class="footerLinks">
                 <h2>PRODUCTS</h2>
                         <a href="televisons.html">Televisions & Accessoris</a><br>
                         <a href="#">Home Appliances</a><br>

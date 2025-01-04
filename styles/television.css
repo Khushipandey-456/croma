@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(37, 36, 36);
+   
+}
+#cont>#card-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 2px solid grey;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+.card{
+    height:fit-content;
+    width: 400px;
+    border: 2px solid red;
+    margin-top: 20px;
+    padding: 10px;
+}
+#filters{
+width: 100%;
+border: 2px solid blue;
+margin-top: 10%;
+}
+.card>h4>a{
+    color: black;
+}
