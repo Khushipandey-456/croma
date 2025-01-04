@@ -12,7 +12,7 @@ function closeNav() {
 let navMenu=()=>{
   let menu =` <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href="televisons.html">Televisions & Accessoris</a>
+                            <a href="televisions.html">Televisions & Accessoris</a>
                             <a href="#">Home Appliances</a>
                             <a href="#">Phones & Wearable</a>
                             <a href="#">Computers & Tablets</a>

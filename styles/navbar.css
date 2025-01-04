@@ -19,10 +19,8 @@ body {
     font-family: Georgia;}
 
 #main-container {
-    /* padding: 10px; */
     height: 100%;
     width: 100%;
-    border: 2px solid red;
 }
 
 #nav-container>#nav {

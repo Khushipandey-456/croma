@@ -1,16 +1,12 @@
 #footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
     background-color: rgb(61, 58, 58);
-    bottom: 0;
-    position: absolute;
+    font-family: monospace;
     height: fit-content;
-    gap: 20px;
-
 }
 
 input {
