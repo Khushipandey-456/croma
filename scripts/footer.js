@@ -1,5 +1,5 @@
 let footers = () => {
-    let card = `<div id="footer">
+  let card = `<div id="footer">
              <div class="footerLinks">
                 <h2>CONTACT WITH US</h2>
                 <input type="email" placeholder="Enter Email ID" id="email"><br>
@@ -37,6 +37,6 @@ let footers = () => {
                          <a href="">Top Brands</a><br>
             </div>
           </div>`
-    document.getElementById("footer").innerHTML = card;
+  document.getElementById("footer").innerHTML = card;
 };
 footers()

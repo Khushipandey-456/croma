@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #302e2e;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #302e2e;
   text-align: center;
   overflow: scroll;
 }
@@ -78,14 +79,16 @@ body {
   gap: 10px;
   width: 80%;
 }
-#new>img{
+
+#new>img {
   width: 650px;
   margin: auto;
   padding-left: 20px;
 }
-#products{
+
+#products {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   height: fit-content;
   padding: 10px;
@@ -93,7 +96,8 @@ body {
   gap: 10px;
   justify-items: center;
 }
-#products>img{
+
+#products>img {
   width: 400px;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

@@ -1,16 +1,18 @@
-body{
+body {
     background-color: rgb(20, 19, 19);
-   
+
 }
-#cont>#card-div{
+
+#cont>#card-div {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: fit-content;
     padding: 10px;
     margin: auto;
 }
-.card{
+
+.card {
     /* height:fit-content; */
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -18,16 +20,20 @@ body{
     padding: 10px;
     height: 600px;
 }
+
 #pruductImg {
     height: 350px;
 }
-#filters{
-width: 100%;
-margin-top: 10%;
+
+#filters {
+    width: 100%;
+    margin-top: 10%;
 }
-.card>h4>a{
+
+.card>h4>a {
     color: black;
 }
+
 button {
     padding: 10px 20px;
     margin: 5px;
@@ -37,6 +43,35 @@ button {
     border: none;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: #45a049;
+}
+
+/* Adding Meadia Query on cards */
+/* For large screen */
+@media (min-width:1024px) and (max-width:1250px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* for Medium screen */
+@media (min-width:768px) and (max-width:1023px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 2px solid red; */
+
+    }
+}
+
+/* for small screen */
+@media (min-width:320px) and (max-width:767px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }

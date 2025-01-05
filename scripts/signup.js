@@ -20,7 +20,7 @@ form.addEventListener("submit", function () {
             if (user.length != 0) {
                 /// user present
                 alert("User already registred, please login");
-                window.location.href = "login.html"
+                window.location.href = "index.html"
             } else {
                 /// user is not present
                 /// push the user into json server
@@ -32,7 +32,7 @@ form.addEventListener("submit", function () {
                     body: JSON.stringify(userObj),
                 }).then(() => {
                     alert("Signup Sucessfull");
-                    window.location.href = "login.html"
+                    window.location.href = "index.html"
                 });
             }
         })

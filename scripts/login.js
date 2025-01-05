@@ -20,7 +20,7 @@ form.addEventListener("submit", function () {
                 if (user[0].password == password) {
                     alert("Login Sucess...");
                     localStorage.setItem("loginData", JSON.stringify(user[0]))
-                    window.location.href = "todos.html"
+                    window.location.href = "index.html"
                 } else {
                     alert("Password is wrong, please login with right password")
                 }

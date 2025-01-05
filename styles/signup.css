@@ -1,29 +1,37 @@
+*{
+    background-color: rgb(37, 34, 34);
+}
 #form {
     width: 50%;
     height: 350px;
     margin: 2rem auto;
-    background-color: rgb(228, 200, 253);
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
 
 }
+
 h3 {
     font-size: 2rem;
+    background-color: white;
 }
 
 #form input {
     height: 20px;
     width: 80%;
+    color: black;
+    background-color: whitesmoke;
 }
 
 select {
     height: 20px;
     width: 80%;
-    background-color: rgb(228, 200, 253);
-    
+    background-color: white;
+
 }
+
 #submit {
     width: 50px;
     background-color: blueviolet;
@@ -33,15 +41,44 @@ select {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 10px;
-    
+
 }
 
 #submit:hover {
     background-color: rgb(165, 80, 245);
     transition: background-color 1s ease;
 }
-#profile{
-    display:flex;
-    
 
+#profile {
+    display: flex;
+
+
+}
+
+/* Adding Meadia Query on cards */
+/* For large screen */
+@media (min-width:1024px) and (max-width:1250px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* for Medium screen */
+@media (min-width:768px) and (max-width:1023px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 2px solid red; */
+
+    }
+}
+
+/* for small screen */
+@media (min-width:320px) and (max-width:767px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }

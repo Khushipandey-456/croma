@@ -9,8 +9,8 @@ function closeNav() {
   document.getElementById("menu-div").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
-let navMenu=()=>{
-  let menu =` <div id="mySidenav" class="sidenav">
+let navMenu = () => {
+  let menu = ` <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                             <a href="televisions.html">Televisions & Accessoris</a>
                             <a href="#">Home Appliances</a>
@@ -24,7 +24,7 @@ let navMenu=()=>{
                             <a href="">Top Brands</a>
                         </div>
                         <span style="cursor:pointer" onclick="openNav()">&#9776; Menu</span>`
-                        document.getElementById("menu-div").innerHTML=menu;
+  document.getElementById("menu-div").innerHTML = menu;
 }
 navMenu();
 

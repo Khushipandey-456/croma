@@ -1,3 +1,6 @@
+*{
+    background-color: rgb(37, 34, 34);
+}
 #form {
     height: 500px;
     width: 500px;
@@ -22,10 +25,12 @@ span {
     margin-left: 40%;
     font-size: 20px;
 }
-#submit{
+
+#submit {
     width: 95%;
     height: 40px;
 }
+
 .close {
     color: #aaa;
     float: right;
@@ -39,6 +44,7 @@ span {
     text-decoration: none;
     cursor: pointer;
 }
+
 /* .sidenav {
     height: 80%;
     width: 20%;

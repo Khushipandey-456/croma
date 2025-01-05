@@ -16,7 +16,8 @@
 body {
     height: 100%;
     width: 100%;
-    font-family: Georgia;}
+    font-family: Georgia;
+}
 
 #main-container {
     height: 100%;
@@ -27,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+   
     /* padding: 10px; */
     height: 50px;
     width: 100%;
@@ -38,81 +39,110 @@ body {
     z-index: 1000;
 
 }
-    #logo>img {
-        width: 150px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 30%;
+
+#logo>img {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 30%;
+
+}
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+
+}
+
+#nav-links>input {
+    height: 30px;
+    width: 50%;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 1px;
+
+}
+
+a>img {
+    height: 20px;
+    color: white;
+
+}
+
+.sidenav {
+    height: 80%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: scroll;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow-x: hidden;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Adding Meadia Query on cards */
+/* For large screen */
+@media (min-width:1024px) and (max-width:1250px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* for Medium screen */
+@media (min-width:768px) and (max-width:1023px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 2px solid red; */
 
     }
+}
 
-    #nav-links {
-        display: flex;
-        gap: 20px;
-        width: 80%;
-        height: 50px;
-        padding: 10px;
-
-    }
-
-    #nav-links>input {
-        height: 30px;
-        width: 50%;
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 20px;
-        color: white;
-        padding: 1px;
-        
-    }
-
-    a>img {
-        height: 20px;
-        color: white;
-       
-    }
-
-    .sidenav {
-        height: 80%;
-        width: 20%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow: scroll;
-        transition: 0.5s;
-        padding-top: 60px;
-        overflow-x: hidden;
+/* for small screen */
+@media (min-width:320px) and (max-width:767px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
 
     }
-
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    span {
-        font-size: 20px;
-        margin-top: 10px;
-    }
+}
