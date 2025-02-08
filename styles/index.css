@@ -7,56 +7,85 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #302e2e;
+  /* background-color: #302e2e; */
   text-align: center;
   overflow: scroll;
 }
 
-#cont-img {
-  max-width: 100%;
+.slide-container {
+  position: relative;
+  width: 100%;
+  height:50%px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
   height: fit-content;
-}
-
-.slide {
   width: 100%;
-  max-height: 30%;
-  display: none;
+  /* display: flex; */
+  transition: transform 0.5s ease;
 }
 
-.slide img {
+.slider img {
   width: 100%;
-  height: 30%;
+  height: auto;
 }
 
-.prev,
-.next {
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  padding: 15px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
   user-select: none;
-  transform: translateY(-50%);
 }
-
-.prev {
-  left: 0;
-}
-
+/* Position the "next button" to the right */
 .next {
   right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  
 }
 
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+ /* for large screen */
+ @media(min-width:1024px) and (max-width:1250px) {
+  .slide img{
+    width: 100%;
+    height: 50%;
 
+  }
+}
+
+/* Medium large screen */
+@media(min-width:768) and (max-width:1023px) {
+  .slide img{
+      width: 70%;
+      height: 50%;
+  }
+}
+
+/* small large screen */
+@media(min-width:320px) and (max-width:767px) {
+  .slide img{
+     width: 50%;
+     height: 30%;
+  }
+}
 #bank-offers {
   border: 2px solid black;
   margin-top: 30%;
@@ -77,7 +106,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 #new>img {
@@ -85,7 +114,33 @@ body {
   margin: auto;
   padding-left: 20px;
 }
+/* for large screen */
+@media(min-width:1024px) and (max-width:1250px) {
+  #new >img{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
 
+  }
+}
+
+/* Medium large screen */
+@media(min-width:768) and (max-width:1023px) {
+  #new > img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
+
+/* small large screen */
+@media(min-width:320px) and (max-width:767px) {
+  #new >img{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
 #products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -102,3 +157,60 @@ body {
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+/* for large screen */
+@media(min-width:1024px) and (max-width:1250px) {
+  #products >img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+
+  }
+}
+
+/* Medium large screen */
+@media(min-width:768) and (max-width:1023px) {
+  #products >img{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+/* small large screen */
+@media(min-width:320px) and (max-width:767px) {
+  #products >img{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
+#myInput {
+  background-image: url('/css/searchicon.png'); 
+  background-repeat: no-repeat; 
+  width: 100%;
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black; 
+  display: block; 
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; }
+

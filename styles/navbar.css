@@ -52,8 +52,7 @@ body {
     display: flex;
     gap: 20px;
     width: 80%;
-    height: 50px;
-    padding: 10px;
+    height: 30px;
 
 }
 
@@ -120,29 +119,24 @@ span {
 }
 
 /* Adding Meadia Query on cards */
-/* For large screen */
-@media (min-width:1024px) and (max-width:1250px) {
-    .card {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+/* for large screen */
+@media(min-width:1024px) and (max-width:1250px) {
+    #nav-container{
+        width: 100%;  
     }
-}
-
-/* for Medium screen */
-@media (min-width:768px) and (max-width:1023px) {
-    .card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* border: 2px solid red; */
+  }
+  
+  /* Medium large screen */
+  @media(min-width:768) and (max-width:1023px) {
+    #nav-container{
+        width: 80%;
 
     }
-}
-
-/* for small screen */
-@media (min-width:320px) and (max-width:767px) {
-    .card {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-}
+  }
+  
+  /* small large screen */
+  @media(min-width:320px) and (max-width:767px) {
+    #nav-container >nav{
+      width: 50%;
+          }
+  }

@@ -4,7 +4,7 @@
 #form {
     height: 500px;
     width: 500px;
-    background-color: rgb(20, 20, 20);
+    /* background-color: rgb(20, 20, 20); */
     color: white;
     padding: 10px;
     margin: 4rem auto;
@@ -15,7 +15,7 @@ input {
     width: 90%;
     margin-top: 20px;
     font-size: 20px;
-    background-color: rgb(20, 20, 20);
+    /* background-color: rgb(20, 20, 20); */
     border: 2px solid aqua;
     color: white;
     padding: 10px;
@@ -45,7 +45,9 @@ span {
     cursor: pointer;
 }
 
-/* .sidenav {
+
+
+#form {
     height: 80%;
     width: 20%;
     position: fixed;
@@ -53,9 +55,46 @@ span {
     top: 0;
     left: 0;
     background-color: #111;
-    overflow:scroll;
+    overflow: scroll;
     transition: 0.5s;
     padding-top: 60px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 
-} */
+}
+
+
+#form.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Adding Meadia Query on cards */
+/* for large screen */
+@media(min-width:1024px) and (max-width:1250px) {
+    #form{
+        width: 100%;  
+    }
+  }
+  
+  /* Medium large screen */
+  @media(min-width:768) and (max-width:1023px) {
+    #form{
+        width: 80%;
+
+    }
+  }
+  
+  /* small large screen */
+  @media(min-width:320px) and (max-width:767px) {
+    #form{
+      width: 50%;
+          }
+  }
