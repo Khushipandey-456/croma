@@ -1,3 +1,18 @@
+let location= () => {
+    let menu = ` <span id="closeBtn" class="close">&times;</span>
+        <h1>SELECT YOUR LOCATION</h1>
+        <h3>To Check Products & Delivery Options available at your location</h3>
+        <input type="text"  placeholder="Enter pin code"/>
+        <input type="text" placeholder="⌖ Get Current Location" /><br><br>
+        <span>OR</span>
+        <input id="submit" type="submit" value="Signin to select address" />
+        <input id="submit" type="submit" value="Continue" />
+                          <span style="cursor:pointer" onclick="openNav()">&#9776; Location</span>`
+    document.getElementById("form").innerHTML = menu;
+  }
+  location();
+
+
 closeBtn.onclick = function () {
     form.style.display = "none";
 }
