@@ -12,7 +12,7 @@ async function getData() {
 }
 function displayData(arr) {
     let div = document.getElementsByClassName(".card");
-    let add = document.getElementById("addbtn");
+    let add = document.getElementsByClassName("addbtn");
 
     arr.map((el, i) => {
         add.addEventListener("click", () => {
