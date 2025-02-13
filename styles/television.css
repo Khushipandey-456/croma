@@ -1,6 +1,9 @@
+*{
+    background-color: rgb(37, 34, 34);
+}
 body {
-    background-color: rgb(20, 19, 19);
-    color: black;
+    background-color: rgb(51, 47, 47);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -32,7 +35,7 @@ body {
 }
 
 .card>h4>a {
-    color: black;
+    color: rgb(247, 246, 246);
 }
 
 button {
